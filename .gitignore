@@ -1,0 +1,7 @@
+# PHP / XAMPP ignore rules
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+/voting/uploads/[0-9]*_*
