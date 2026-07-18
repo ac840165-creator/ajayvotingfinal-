@@ -38,7 +38,7 @@ CREATE INDEX idx_votes_candidate ON votes(candidate_id);
 
 -- Seed default admin account (password is 'admin123')
 INSERT INTO users (first_name, last_name, date_of_birth, email, password_hash, type) 
-VALUES ('System', 'Admin', '1990-01-01', 'ac840165@gamil.com', '$2y$10$/eaTyyi64nFlknDs8ob3QuQKWlR3JslaJ109pm2BGuKo.04jkxzhy', 'admin')
+VALUES ('System', 'Admin', '1990-01-01', 'ac840165@gmail.com', '$2y$10$/eaTyyi64nFlknDs8ob3QuQKWlR3JslaJ109pm2BGuKo.04jkxzhy', 'admin')
 ON DUPLICATE KEY UPDATE user_id=user_id;
 
 -- Seed default voter account (password is 'admin123')

@@ -46,7 +46,7 @@ if ($tableExists) {
     $res = $conn->query("SHOW COLUMNS FROM users LIKE 'phone'");
     $hasPhone = $res && $res->num_rows > 0;
     
-    $adminRes = $conn->query("SELECT user_id FROM users WHERE email = 'ac840165@gamil.com'");
+    $adminRes = $conn->query("SELECT user_id FROM users WHERE email = 'ac840165@gmail.com' AND type = 'admin'");
     $hasAdmin = $adminRes && $adminRes->num_rows > 0;
 }
 
